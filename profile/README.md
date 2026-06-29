@@ -29,7 +29,7 @@
 | ![카카오톡에서 유튜브 링크 전송 후 즉시 ACK 응답](assets/kakao-upload.png) | ![Notion에 생성된 요약 페이지](assets/notion-summary-page.png) |
 | 유튜브 URL을 내면 5초 이내 확인 메시지를 받고, 요약은 백그라운드에서 처리 | AI가 생성한 개요·청크 요약이 Notion 페이지로 동기화 |
 
-| 카카오톡 — Notion 연동 | (선택) 검색 결과 이메일 |
+| 카카오톡 — Notion 연동 |  검색 결과 이메일 |
 |:---:|:---:|
 | ![카카오톡 Notion OAuth 연동 화면](assets/kakao-notion-oauth.png) | ![RAG 검색 결과 이메일](assets/search-email.png) |
 | textCard 버튼 → 브릿지 페이지 → 외부 브라우저 OAuth | 자연어 질문에 대한 답변을 이메일로 수신 |
@@ -154,6 +154,8 @@ flowchart TB
     Worker --> SMTP
     NotionUI <-->|OAuth| API
 ```
+
+![시스템 아키텍처](assets/시스템 아키텍쳐.png)
 
 ### 레이어 구조
 
